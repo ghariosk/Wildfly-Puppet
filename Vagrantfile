@@ -29,7 +29,7 @@ Vagrant.configure("2") do |config|
   end
 
   # Eventually, when both modules are ready, this is the synthax that would
-  # have to be user :
+  # have to be used :
 
 
   # config.vm.define "web" do |web|
