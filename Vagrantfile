@@ -14,16 +14,16 @@ Vagrant.configure("2") do |config|
     app.vm.box = "nrel/CentOS-6.7-x86_64"
     app.vm.box_version = "1.0.0"
 
-    app.vm.network "private_network", ip: "192.168.33.10"
+    app.vm.network "private_network", ip: "192.168.33.13"
     app.hostsupdater.aliases = ["wildfly.local"]
 
     app.vm.synced_folder "./app", "/home/vagrant"
 
     app.puppet_install.puppet_version = "5.3.3"
     app.vm.provision "puppet" do |puppet|
-      puppet.manifests_path = "/Users/karlgharios/Wildfly/app/wildfly/manifests"
+      puppet.manifests_path = "/Users/karlgharios/Wildfly/app/wildfly10/manifests"
       puppet.manifest_file = "site.pp"
-      puppet.module_path = "/Users/karlgharios/Wildfly/app/wildfly/modules"
+      puppet.module_path = "/Users/karlgharios/Wildfly/app/wildfly10/modules"
     end
 
   end

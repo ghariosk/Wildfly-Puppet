@@ -43,15 +43,12 @@ class wildfly10 {
 
 	exec {'start nohup':
 		command => "./wildfly.sh",
-		cwd => '/home/vagrant/wildflys',
+		cwd => '/home/vagrant/wildfly10/scripts',
 		provider=> "shell",
 		user => "vagrant",
 		path => '/usr/bin',
 		require => Class['wildfly']
 	}	
-
-
-
 
 }
 
