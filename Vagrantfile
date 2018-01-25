@@ -32,51 +32,51 @@ Vagrant.configure("2") do |config|
   # have to be used :
 
 
-  # config.vm.define "web" do |web|
-  #   web.vm.box_check_update = false
+  config.vm.define "web" do |web|
+    web.vm.box_check_update = false
 
-  #   web.vm.box = "nrel/CentOS-6.7-x86_64"
-  #   web.vm.box_version = "1.0.0"
+    web.vm.box = "nrel/CentOS-6.7-x86_64"
+    web.vm.box_version = "1.0.0"
 
-  #   web.vm.network "private_network", ip: "192.168.33.10"
-  #   web.hostsupdater.aliases = ["wildfly.local"]
+    web.vm.network "private_network", ip: "192.168.33.11"
+    web.hostsupdater.aliases = ["web.local"]
 
-  #   web.vm.synced_folder "./app", "/home/vagrant"
+    web.vm.synced_folder "./app", "/home/vagrant"
 
-  #   web.puppet_install.puppet_version = "5.3.3"
-  #   web.vm.provision "puppet" do |puppet|
-  #     puppet.manifests_path = "/Users/karlgharios/Wildfly/app/wildfly/manifests"
-  #     puppet.manifest_file = "site.pp"
-  #     puppet.module_path = "/Users/karlgharios/Wildfly/app/wildfly/modules"
-  #   end
+    web.puppet_install.puppet_version = "5.3.3"
+    web.vm.provision "puppet" do |puppet|
+      puppet.manifests_path = "/Users/karlgharios/Wildfly/app/wildfly/manifests"
+      puppet.manifest_file = "site.pp"
+      puppet.module_path = "/Users/karlgharios/Wildfly/app/wildfly/modules"
+    end
 
-  # end
+  end
 
-  # config.vm.define "oradb" do |db|
+  config.vm.define "oradb" do |db|
 
-  #   db.vm.box_check_update = false
+    db.vm.box_check_update = false
 
-  #   db.vm.box = "nrel/CentOS-6.7-x86_64"
-  #   db.vm.box_version = "1.0.0"
+    db.vm.box = "nrel/CentOS-6.7-x86_64"
+    db.vm.box_version = "1.0.0"
 
-  #   db.vm.network "private_network", ip: "192.168.33.11"
-  #   db.hostsupdater.aliases = ["oradb.local"]
+    db.vm.network "private_network", ip: "192.168.33.12"
+    db.hostsupdater.aliases = ["oradb.local"]
 
    
-  #   db.vm.synced_folder "./db", "/home/vagrant"
+    db.vm.synced_folder "./db", "/home/vagrant"
 
-  #   db.puppet_install.puppet_version = "5.3.3"
-  #   db.vm.provision "puppet" do |puppet|
-  #     puppet.manifests_path = "/Users/karlgharios/Wildfly/db/"
-  #     puppet.manifest_file = "site.pp"
-  #     puppet.module_path = "/Users/karlgharios/Wildfly/db/"
-  #   end
+    db.puppet_install.puppet_version = "5.3.3"
+    db.vm.provision "puppet" do |puppet|
+      puppet.manifests_path = "/Users/karlgharios/Wildfly/db/"
+      puppet.manifest_file = "site.pp"
+      puppet.module_path = "/Users/karlgharios/Wildfly/db/"
+    end
 
-  #   db.vm.provider "virtualbox" do |v|
-  #       v.memory = 2048
-  #       v.cpus = 2
-  #   end
+    db.vm.provider "virtualbox" do |v|
+        v.memory = 2048
+        v.cpus = 2
+    end
 
-  # end
+  end
   
 end
