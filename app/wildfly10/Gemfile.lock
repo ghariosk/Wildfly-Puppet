@@ -17,12 +17,14 @@ GEM
     rspec-puppet (2.6.9)
       rspec
     rspec-support (3.7.0)
+    rubygems-update (2.7.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rspec-puppet
+  rubygems-update
 
 BUNDLED WITH
    1.16.1

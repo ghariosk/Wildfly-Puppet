@@ -4,5 +4,10 @@ require 'rspec'
 
 
 describe package('git') do
-	it { should be_installed}
+	it { should_not be_installed}
+end
+
+
+describe package('java-1.8.0') do
+	it { should_not be_installed}
 end
