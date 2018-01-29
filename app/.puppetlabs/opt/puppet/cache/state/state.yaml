@@ -1,0 +1,46 @@
+---
+File[/home/vagrant/.puppetlabs/etc/puppet]:
+  :checked: 2018-01-26 11:54:37.137100324 +00:00
+  :synced: 2018-01-26 11:54:37.139297492 +00:00
+File[/home/vagrant/.puppetlabs/etc/code]:
+  :checked: 2018-01-26 11:54:37.140312133 +00:00
+  :synced: 2018-01-26 11:54:37.141474538 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache]:
+  :checked: 2018-01-26 11:54:37.142333823 +00:00
+  :synced: 2018-01-26 11:54:37.143822819 +00:00
+File[/home/vagrant/.puppetlabs/var/log]:
+  :checked: 2018-01-26 11:54:37.144497452 +00:00
+  :synced: 2018-01-26 11:54:37.146859288 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/state]:
+  :checked: 2018-01-26 11:54:37.147546678 +00:00
+  :synced: 2018-01-26 11:54:37.151158725 +00:00
+File[/home/vagrant/.puppetlabs/var/run]:
+  :checked: 2018-01-26 11:54:37.151760109 +00:00
+  :synced: 2018-01-26 11:54:37.153545337 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/lib]:
+  :checked: 2018-01-26 11:54:37.154217732 +00:00
+  :synced: 2018-01-26 11:54:37.155500528 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/preview]:
+  :checked: 2018-01-26 11:54:37.156294707 +00:00
+  :synced: 2018-01-26 11:54:37.159323248 +00:00
+File[/home/vagrant/.puppetlabs/etc/puppet/ssl]:
+  :checked: 2018-01-26 11:54:37.159917110 +00:00
+  :synced: 2018-01-26 11:54:37.162665149 +00:00
+File[/home/vagrant/.puppetlabs/etc/puppet/ssl/certs]:
+  :checked: 2018-01-26 11:54:37.163555896 +00:00
+  :synced: 2018-01-26 11:54:37.165812999 +00:00
+File[/home/vagrant/.puppetlabs/etc/puppet/ssl/public_keys]:
+  :checked: 2018-01-26 11:54:37.166461211 +00:00
+  :synced: 2018-01-26 11:54:37.169361893 +00:00
+File[/home/vagrant/.puppetlabs/etc/puppet/ssl/certificate_requests]:
+  :checked: 2018-01-26 11:54:37.170049646 +00:00
+  :synced: 2018-01-26 11:54:37.173001656 +00:00
+File[/home/vagrant/.puppetlabs/etc/puppet/ssl/private_keys]:
+  :checked: 2018-01-26 11:54:37.173710321 +00:00
+  :synced: 2018-01-26 11:54:37.178063183 +00:00
+File[/home/vagrant/.puppetlabs/etc/puppet/ssl/private]:
+  :checked: 2018-01-26 11:54:37.179275578 +00:00
+  :synced: 2018-01-26 11:54:37.182908985 +00:00
+File[/home/vagrant/.puppetlabs/opt/puppet/cache/facts.d]:
+  :checked: 2018-01-26 11:54:37.183599424 +00:00
+  :synced: 2018-01-26 11:54:37.184953525 +00:00

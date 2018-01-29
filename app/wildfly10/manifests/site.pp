@@ -27,7 +27,8 @@ class wildfly10 {
 	  version        => '10.1.0',
 	  install_source => 'http://download.jboss.org/wildfly/10.1.0.Final/wildfly-10.1.0.Final.tar.gz',
 	  mgmt_user        => { username  => "test", password  => "Test1234" },
-	  require => Wget::Fetch['Wildfly-10']
+	  java_home 	=> '/usr/lib/jvm/jre-1.8.0-openjdk.x86_64/',
+	  require => Wget::Fetch['Wildfly-10'],
 	}
 
 
@@ -41,14 +42,26 @@ class wildfly10 {
 	  action   => 'accept',
 	}
 
-	exec {'start nohup':
-		command => "./wildfly.sh",
-		cwd => '/home/vagrant/wildfly10/scripts',
-		provider=> "shell",
-		user => "vagrant",
-		path => '/usr/bin',
-		require => Class['wildfly']
-	}	
+	# exec {'start nohup':
+	# 	command => "./wildfly.sh",
+	# 	cwd => '/home/vagrant/wildfly10/scripts',
+	# 	provider=> "shell",
+	# 	user => "vagrant",
+	# 	path => '/usr/bin',
+
+
+
+	# }
+
+
+	exec {'uninstall puppet':
+		command => 'puppet resource package puppet ensure=absent 2> /dev/null || true',
+		provider => "shell",
+		user => 'root',
+		path => '/usr/bin'
+	}
+
+
 
 }
 

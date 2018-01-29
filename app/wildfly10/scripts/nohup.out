@@ -53,4 +53,142 @@ OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was 
 [0m[0m15:38:10,085 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://[0:0:0:0:0:0:0:0]:9990/management
 [0m[0m15:38:10,088 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://[0:0:0:0:0:0:0:0]:9990
 [0m[0m15:38:10,092 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started in 8767ms - Started 331 of 577 services (393 services are lazy, passive or on-demand)
+[0m=========================================================================
+
+  JBoss Bootstrap Environment
+
+  JBOSS_HOME: /opt/wildfly
+
+  JAVA: java
+
+  JAVA_OPTS:  -server -Xms256m -Xmx512m -XX:MaxPermSize=128m 
+
+=========================================================================
+
+OpenJDK 64-Bit Server VM warning: ignoring option MaxPermSize=128m; support was removed in 8.0
+[0m16:13:46,693 INFO  [org.jboss.modules] (main) JBoss Modules version 1.5.2.Final
+[0m[0m16:13:47,314 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+[0m[0m16:13:47,448 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0049: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) starting
+[0m[0m16:13:51,165 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+[0m[0m16:13:51,246 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.4.0.Final
+[0m[0m16:13:51,272 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.4.0.Final
+[0m[0m16:13:51,403 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.21.Final
+[0m[0m16:13:51,514 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+[0m[0m16:13:51,552 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+[0m[0m16:13:51,526 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+[0m[33m16:13:51,565 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+[0m[0m16:13:51,573 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+[0m[0m16:13:51,659 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 2 core threads with 16 task threads based on your 1 available processors
+[0m[0m16:13:51,889 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+[0m[0m16:13:52,192 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.3.4.Final)
+[0m[0m16:13:52,651 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path '/opt/wildfly/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+[0m[0m16:13:52,868 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=4.9.6.Final
+[0m[0m16:13:52,894 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.4.0.Final starting
+[0m[0m16:13:52,936 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+[0m[0m16:13:52,986 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+[0m[0m16:13:53,015 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+[0m[0m16:13:53,106 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+[0m[0m16:13:53,118 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+[0m[0m16:13:53,210 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+[0m[31m16:13:53,513 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Address already in use /0:0:0:0:0:0:0:0:8080
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:151)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[0m[0m16:13:53,789 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 4 (per class), which is derived from the number of CPUs on this host.
+[0m[0m16:13:53,792 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 16 (per class), which is derived from thread worker pool sizing.
+[0m[0m16:13:55,065 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-2) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.4.Final
+[0m[33m16:13:55,157 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /opt/wildfly/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+[0m[0m16:13:55,199 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/wildfly/standalone/deployments
+[0m[0m16:13:55,255 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:13:55,259 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:13:55,251 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 66) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:13:55,255 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:13:55,262 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:13:55,265 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 66) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+[0m[0m16:13:55,551 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+[0m[31m16:13:55,664 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: java.net.BindException: Address already in use /0:0:0:0:0:0:0:0:9990
+	at org.jboss.as.server.mgmt.UndertowHttpManagementService.start(UndertowHttpManagementService.java:273)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[0m[31m16:13:55,694 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.undertow.listener.https: org.jboss.msc.service.StartException in service jboss.undertow.listener.https: Address already in use /0:0:0:0:0:0:0:0:8443
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:151)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+[0m[31m16:13:55,712 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("core-service" => "management"),
+    ("management-interface" => "http-interface")
+]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.serverManagement.controller.management.http" => "org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: java.net.BindException: Address already in use /0:0:0:0:0:0:0:0:9990"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.serverManagement.controller.management.http"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined,
+    "WFLYCTL0288: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.serverManagement.controller.management.http.shutdown"],
+        "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+    }
+}
+[0m[31m16:13:55,715 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("http-listener" => "default")
+]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.undertow.listener.default" => "org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Address already in use /0:0:0:0:0:0:0:0:8080"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.undertow.listener.default"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+[0m[31m16:13:55,718 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "undertow"),
+    ("server" => "default-server"),
+    ("https-listener" => "https")
+]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.undertow.listener.https" => "org.jboss.msc.service.StartException in service jboss.undertow.listener.https: Address already in use /0:0:0:0:0:0:0:0:8443"},
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.undertow.listener.https"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined
+}
+[0m[31m16:13:55,725 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("subsystem" => "webservices")]) - failure description: {
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined,
+    "WFLYCTL0288: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => ["jboss.ws.config"],
+        "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+    }
+}
+[0m[31m16:13:55,729 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([("subsystem" => "ejb3")]) - failure description: {
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => undefined,
+    "WFLYCTL0288: One or more services were unable to start due to one or more indirect dependencies not being available." => {
+        "Services that were unable to start:" => [
+            "jboss.ejb.default-local-ejb-receiver-service",
+            "jboss.ejb3.ejbClientContext.default",
+            "jboss.ejb3.localEjbReceiver.value"
+        ],
+        "Services that may be the cause:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"]
+    }
+}
+[0m[31m16:13:55,729 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "ejb3"),
+    ("service" => "remote")
+]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.remoting.remotingConnectorInfoService.http-remoting-connector"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => ["jboss.ejb3.connector is missing [jboss.remoting.remotingConnectorInfoService.http-remoting-connector]"]
+}
+[0m[0m16:13:55,926 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.remoting.remotingConnectorInfoService.http-remoting-connector (missing) dependents: [service jboss.ejb3.connector] 
+WFLYCTL0186:   Services which failed to start:      service jboss.undertow.listener.https: org.jboss.msc.service.StartException in service jboss.undertow.listener.https: Address already in use /0:0:0:0:0:0:0:0:8443
+      service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Address already in use /0:0:0:0:0:0:0:0:8080
+      service jboss.serverManagement.controller.management.http: org.jboss.msc.service.StartException in service jboss.serverManagement.controller.management.http: java.net.BindException: Address already in use /0:0:0:0:0:0:0:0:9990
+
+[0m[0m16:13:56,177 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0063: Http management interface is not enabled
+[0m[0m16:13:56,183 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0054: Admin console is not enabled
+[0m[31m16:13:56,186 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: WildFly Full 10.1.0.Final (WildFly Core 2.2.0.Final) started (with errors) in 10435ms - Started 312 of 572 services (9 services failed or missing dependencies, 393 services are lazy, passive or on-demand)
 [0m
