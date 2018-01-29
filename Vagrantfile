@@ -21,9 +21,9 @@ Vagrant.configure("2") do |config|
 
     app.puppet_install.puppet_version = "5.3.3"
     app.vm.provision "puppet" do |puppet|
-      puppet.manifests_path = "/Users/karlgharios/Wildfly/app/wildfly10/manifests"
+      puppet.manifests_path = "./app/wildfly10/manifests"
       puppet.manifest_file = "site.pp"
-      puppet.module_path = "/Users/karlgharios/Wildfly/app/wildfly10/modules"
+      puppet.module_path = "./app/wildfly10/modules"
     end
 
   end
